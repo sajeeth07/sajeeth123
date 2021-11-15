@@ -1,0 +1,212 @@
+<!DOCTYPE>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<head>
+<style>
+	div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+ 
+}
+#div1{
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  background: yellow;
+  transition: width 2s;
+}
+
+#div1:hover {
+  width: 300px;
+  }
+
+	
+#div2{
+		 background-color: grey;
+  width: 500px;
+  border: 15px solid black;
+  padding: 70px;
+  margin: 80px;
+	}
+</style>
+	<title>CAR ENTHUSIAST</title>
+	<link rel="stylesheet" type="text/css" href="cars.css">
+	<meta charset="UTF-8">
+  	<meta name="description" content="About Cars">
+  	<meta name="keywords" content="Cars,Audi&rollsroyce,Registeration">
+  	<meta name="author" content="Kishan">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<script type="text/javascript" src="myjs.js">
+  	 </script>
+</head>
+
+<body>
+
+
+	
+<div class="fixed">
+Welcome to KR club
+</div>
+	
+	<svg height="130" width="800">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"
+      style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="100%"
+      style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="35" font-family="Verdana"
+  x="35" y="86">KR club</text>
+Sorry, your browser does not support inline SVG.
+</svg>
+
+	<div id="div2"> <h1>FOR THE PASSION OF CARS</h1> </div> 
+	
+	<br>
+	<img src="http://pngimg.com/uploads/audi/audi_PNG1772.png" width="200" height="200" alt="R8" class="car-image">
+
+
+	<br>
+	<p>With a whopper of a V-10 engine mounted behind its high-tech cabin, the 2021 R8 is Audi's halo car.</p>
+	<p>To know more about Audi R8, <a href="https://www.caranddriver.com/audi/r8#:~:text=With%20a%20whopper%20of%20a,R8%20is%20Audi's%20halo%20car.&text=With%20as%20much%20as%20602,send%20shivers%20down%20your%20spine.">click here</a>
+
+	<br>
+	<br>
+	<br>
+    <img src="https://i.ytimg.com/vi/aO6JwsX9dfE/maxresdefault.jpg" width="900" height="500" alt="Black Badge">
+    <br>
+    <br>
+    <p>The Rolls-Royce Wraith is a Full-size luxury car/ Grand tourer manufactured by Rolls-Royce Motor Cars and based on the chassis of the Rolls-Royce Ghost.</p>
+
+    <p>To know more about Rolls Royce Black Badge, <a href="https://en.wikipedia.org/wiki/Rolls-Royce_Wraith_(2013)">click here</a>
+
+
+
+	<p>Most sold car Models in Rolls Royce </p>
+
+	<ol>
+		<li>Phantom Black Badge</li>
+		<li>Cullian</li>
+		<li>ghost Black Badge</li>
+	</ol>
+
+	<p>Most Sold Car Models in Audi</p>
+
+	<ul>
+		<li>R8</li>
+		<li>RS7</li>
+		<li>A8L</li>
+		
+	</ul>
+
+	
+	<table style="width:50%">
+		<tr>
+			<th>Different Models in R8 </th>
+			<th>Amazing Models in Rolls Royce</th>
+		</tr>
+		<tr>
+			<td>2dr All-wheel Drive quattro Spyder. (5.2 V10 performance)</td>
+			<td>Dawn</td>
+		</tr>
+		<tr>
+			<td>2dr Rear-wheel Drive Spyder. (5.2 V10)</td>
+			<td>Wraith</td>
+		</tr>
+		<tr>
+			<td>2dr Rear-wheel Drive Coupe.</td>
+			<td>Black Badge series</td>
+		</tr>
+		<tr>
+			<td>2dr All-wheel Drive quattro Spyder. </td>
+			<td>Custom Rolls Royce</td>
+		</tr>
+		
+	</table>
+     <br>
+     <h3>we hope u like this info...and is related of what u searched for...</h3>
+     <br>
+     <div ng-app="myApp" ng-controller="namesCtrl">
+
+<table border="1" width="100%">
+<tr>
+<th ng-click="orderByMe('company')">company</th>
+<th ng-click="orderByMe('country')">country & price</th>
+</tr>
+<tr ng-repeat="x in names | orderBy:myOrderBy">
+<td>{{x.company}}</td>
+<td>{{x.country}}</td>
+</tr>
+</table>
+
+</div>
+
+<script>
+angular.module('myApp', []).controller('namesCtrl', function($scope) {
+    $scope.names = [
+        {company:'Audi',country:'Germany  price starting @ €30,650'},
+        {company:'Rolls-Royce',country:'UK  price starting @ £249,600'},
+        {company:'Bugatti',country:'France  price starting @ €2.4 million'},
+        {company:'ferrari',country:'Italy  price starting @ €950'},
+        {company:'Tesla',country:'USA  price starting @ $45,490'},
+        {company:'koenigsegg',country:'Sweden  price starting @ $3 million'},
+        
+        ];
+    $scope.orderByMe = function(x) {
+        $scope.myOrderBy = x;
+    }
+});
+</script>
+   <br>
+    <h3>Want to know more about your favorite cars?, please join our club, the link is given below.... we are happy to help u.</h3>
+<br>
+	<h2>Luxury and speed</h2>
+	<img src="https://i.pinimg.com/originals/93/df/8d/93df8d59f4e22193b223e9464b26c84b.jpg" usemap="#carmap">
+
+	<map name="carmap">
+		<area shape="rect" coords="16,1,300,400" alt="R8" href="https://twitter.com/audiin?lang=en">
+  		<area shape="rect" coords="375,1,650,400" alt="Rolls Royce" href="https://twitter.com/rollsroyce?lang=en">
+  	</map>
+  	<br>
+  	<br>
+  	<br>
+  	<style>
+    p.solid {border-style: solid;}
+  	 </style>
+  	<p class="solid">Club Registeration</p>
+  	
+  	<div id="div1"><a href="regis.html">To join our KR club click here</a></div>
+  	<form method="post" action="#" onSubmit="return validate(this);" name="form">
+
+</form>
+  	
+  	<br>
+  	<br>
+  	<br>
+  	<h2>A Video of Audi VS Rolls Royce</h2>
+	<iframe width="1000" height="720" src="https://www.youtube.com/embed/VbFt1z0JSD8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<br>
+	<br>
+
+<audio controls>
+	<source src="exhaust-23651.mp3" type="audio/mpeg">
+
+</audio>
+
+<p>Please let us to access your location for better performance.</p>
+
+<button onclick="getLocation()">Access Location</button>
+
+<p id="demo">
+	</p>
+
+
+</body>
+</html>
+
